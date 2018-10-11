@@ -6,6 +6,11 @@ body {
 	margin-right: auto;
 }
 
+#email {
+	text-decoration: none;
+	color: #4b5590;
+}
+
 h2 {
 	color: rgb(230, 230, 230);
 	background-color: #447647;
@@ -15,4 +20,9 @@ h2 {
 	border-radius: 18px;
 	border-bottom-right-radius: 50px;
 	
+}
+
+.cabecalho {
+	text-align: center;
+	font-weight: 600;
 }
