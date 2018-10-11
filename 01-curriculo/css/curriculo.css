@@ -1,0 +1,18 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	
+	width: 840px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h2 {
+	color: rgb(230, 230, 230);
+	background-color: #447647;
+	
+	padding: 10px;
+	
+	border-radius: 18px;
+	border-bottom-right-radius: 50px;
+	
+}
