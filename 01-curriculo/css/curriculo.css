@@ -1,7 +1,7 @@
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	
-	width: 840px;
+	width: 940px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -25,12 +25,28 @@ h2 {
 .cabecalho {
 	text-align: center;
 	font-weight: 600;
-}
-
-section {
 	
+	border: dashed red;
+	
+	float: left;
+	
+	width: 200px;
 }
 
 .conteudo {
-	
+	/* clear: both; */
+	width: 600px;
+	float: right
+		
+}
+
+.experiencias {
+	text-indent: 4ch;
+}
+
+.tecnologias {
+	font-family: monospace;
+	font-weight: 600;
+	font-size: 1.2em; /*120% */
+
 }
