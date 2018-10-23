@@ -19,7 +19,7 @@ nav {
 nav ul li {
     background-color: #C7BE9B;
     margin-bottom: 3px;
-    padding: 3px;
+    padding: 5px;
 }
 
 nav ul li a {
@@ -29,6 +29,7 @@ nav ul li a {
 
 nav ul {
     list-style: none;
+    padding-left: 0;
 }
 
 nav ul li:hover{ 
@@ -41,10 +42,10 @@ nav ul li:hover{
 }
 
 #banner {
-    top: 0;
-    right: 0;
+    bottom: 0;
+    left: 0;
     position: fixed;
-	 transform: translate(25px, 50px) rotate(45deg);
+	 transform: translate(-19px, -62px) rotate(45deg);
 }
 
 h2{
@@ -61,24 +62,26 @@ h2{
 
 #tb-nutrientes{
     border: 1px solid black;
-    width: 60%;
+    width: 70%;
     margin: auto;
 }
 
 #tb-nutrientes th{
     background-color: #F8EA6B;
+    font-size: 1.1em;
+    padding: 5px;
 }
 
 
 #tb-nutrientes tr:nth-child(odd) {
-    background-color: #FFFFFF;
+    background-color: rgb(105, 51, 255);
 }
 
 #tb-nutrientes tr:nth-child(even){
     background-color: #F8EAB3;
 }
 
-figure{
+figure {
     background-color:white;
     width:300px;
     text-align:center;
@@ -89,13 +92,29 @@ figure{
     box-shadow:5px 5px 3px rgba(0,0,0,0.7);
  }
 
+ figcaption {
+   /*  font-family: 'Lucida Sans', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+   font-family: inherit;
+ }
+
 figure:hover {
-     -moz-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
   -webkit-transform:rotate(-5deg);
-	        transform:rotate(-5deg);
+  transform:rotate(-5deg);
   
 }
-
 a:hover {
     text-decoration: underline;
 }
+
+
+/* classes utilitárias */
+
+.texto-centralizado {
+	text-align: center;
+}
+
+.texto-negrito {
+	font-weight: 800;
+}
+
