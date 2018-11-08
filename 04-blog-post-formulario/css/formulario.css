@@ -1,0 +1,27 @@
+.secao-form {
+    background-color: #EEE;
+    border: none;
+    padding: .6rem;
+}
+
+.secao-form > legend {
+    background-color: #BBB;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+
+}
+
+.secao-form:first-child {
+    margin-bottom: 2rem;
+}
+
+label[for] {
+    display: block;
+}
+
+input[type="text"] {
+    width: 95%;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .3em;
+}

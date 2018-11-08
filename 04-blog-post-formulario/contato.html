@@ -19,10 +19,43 @@
 			<p class="data-post">08 de Maio de 2017</p>
 
 			<h2 class="titulo-peso-2">Formulário de Contato</h2>
-			
+
 			<p>Fomulário Aqui !!!</p>
-					 
-			
+
+			<form>
+				<fieldset class="secao-form">
+					<legend>Dados Pessoais</legend>
+					<label for="nome">Nome</label>
+					<input id="nome" name="nome" type="text"  placeholder="Informe o seu nome" autofocus>
+
+					<label for="email">Email</label>
+					<input id="email" name="email" type="text" placeholder="Informe um email válido">
+
+				</fieldset>
+				<fieldset class="secao-form">
+					<legend>Mensagem</legend>
+					<label>
+					    <input type="radio" name="assunto" value="html">HTML/CSS
+				    </label>
+					<label>
+						<input type="radio" name="assunto" value="javascript"> JavaScript
+					</label>
+					<label>
+						<input type="radio" name="assunto" value="outros"> Outros
+					</label>
+
+
+					<label for="msg">Mensagem:</label>
+					<textarea name="mensagem" id="msg" cols="30" rows="8" placeholder="Sua mensagem aqui !!"></textarea>
+
+					<button type="submit" class="btn btn-principal">Enviar Mensagem</button>
+					<button type="reset" class="btn btn-secundario">Limpar Formulário</button>
+				</fieldset>
+
+
+			</form>
+
+
 		</section>
 
 		<aside class="outros-posts">
