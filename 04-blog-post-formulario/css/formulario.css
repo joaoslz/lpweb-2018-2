@@ -25,3 +25,14 @@ input[type="text"] {
     font-size: 1rem;
     padding: .3em;
 }
+
+.btn {
+    padding: .4rem;
+    font-family: inherit;
+    border-radius: .2rem;
+}
+
+.btn-principal {
+   background-color: #c8d0f3;
+   font-weight: 600; 
+}
