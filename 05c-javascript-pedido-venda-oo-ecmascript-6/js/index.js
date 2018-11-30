@@ -8,6 +8,7 @@ console.log(campos);
 
 var tbody = document.querySelector('table tbody');
 
+//document.querySelector('.botao').addEventListener('click', function(event) {
 document.querySelector('.form').addEventListener('submit', function(event) {
     
    event.preventDefault();

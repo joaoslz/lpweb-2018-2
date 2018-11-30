@@ -1,11 +1,15 @@
 function constroiPedido() {
 
-    var pedido = {
+    let pedido = {
 
         itens: [],
 
-        adiciona: function (item) {
-            this.itens.push(item);
+        adiciona: function (item ) {
+            this.itens.push(item );
+        },
+
+        adicionaItens: function(...itens ) {
+            this.itens.push(itens );
         },
 
         getTotal: function () {

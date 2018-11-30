@@ -3,6 +3,7 @@ class ItemPedidoController {
     constructor() {
         
         let $ = document.querySelector.bind(document);
+       
         this._inputNome = $('#nome');
         this._inputQuantidade = $('#quantidade');
         this._inputValor = $('#valor');
@@ -17,6 +18,8 @@ class ItemPedidoController {
             this._inputQuantidade.value,
             this._inputValor.value  
         );
+
+        // adiciona no objeto pedido ...
         
         console.log(item );
     }

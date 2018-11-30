@@ -1,7 +1,9 @@
 
+
 function constroiItemPedido(pNome, pQuantidade, pValor) {
 
-    var item = {
+
+    let item = {
 
         nome: pNome,
         quantidade: pQuantidade,
@@ -9,13 +11,13 @@ function constroiItemPedido(pNome, pQuantidade, pValor) {
 
         getSubTotal: function () {
             return this.quantidade * this.valor;
-        },
+        } ,
 
-        comparaItem: function(outroItem) {
+        comparaItem: function(outroItem ) {
 
-            if (this.item.nome == outroItem.nome 
-                 && this.item.quantidade == outroItem.quantidade
-                 && this.item.valor == outroItem.valor ) {
+            if (this.nome == outroItem.nome 
+                 && this.quantidade == outroItem.quantidade
+                 && this.valor == outroItem.valor ) {
                      return true;
                  }
             return false;     

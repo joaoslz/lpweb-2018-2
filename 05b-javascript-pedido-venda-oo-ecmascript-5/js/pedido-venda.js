@@ -17,8 +17,8 @@ form.addEventListener('submit', function (event) {
     let erros = validaFormulario(item);
 
     if (erros.length == 0 ) {
-        pedido.adiciona(item);
-        constroiTrItemPedido(item);
+        pedido.adiciona(item );
+        constroiTrItemPedido(item );
         atualizaTrTotalPedido();
   
     } else {
@@ -28,15 +28,19 @@ form.addEventListener('submit', function (event) {
 
         let lis =ul.querySelectorAll('#js-msg-erros > li');
 
-        lis.forEach(function(li) {
+        erros.forEach(erro => { 
+               let li = document.createElement('li');
+               li.textContent = erro;
+               ul.appendChild(li);
+            } );
+
+/*         lis.forEach(function(li) { 
             li.remove();
-        });
+        }); 
+*/
+        lis.forEach( li => li.remove()  );
         
-        erros.forEach(function(erro) { 
-           let li = document.createElement('li');
-           li.textContent = erro;
-           ul.appendChild(li);
-        });
+       
     }
 });
 
