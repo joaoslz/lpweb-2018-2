@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Negociações</title>
+    <title>Pedido de Vendas</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
     
@@ -10,8 +10,9 @@
 <body class="container">
     
     <h1 class="text-center">Pedido de Vendas</h1>
+    <div style="margin-bottom: 2rem">
     
-    <form class="form" onsubmit="itemPedidoController.adiciona(event )">
+    <form class="form" onsubmit="pedidoController.adiciona(event )">
         
         <div class="form-group">
             <label for="nome">Nome</label>
@@ -33,15 +34,10 @@
             <button class="btn btn-default" 
                     type="reset">Limpar Formulário</button>
         </div>
-      
+    
     </form>
-    
-  
-    </div> 
-    <br>
-    <br>
-    
-    <table class="table table-hover table-bordered">
+   </div> 
+   <!--  <table class="table table-hover table-bordered">
         <thead>
             <tr>
                 <th>NOME</th>
@@ -54,15 +50,19 @@
         <tbody>
         </tbody>
         
-        <tfoot>
-        </tfoot>
-    </table>
+        <tfoot></tfoot>
+    </table> -->
+
+    <div id="js-pedidoVendaView"></div>
+
     <script src="js/app/models/ItemPedido.js"></script>
-    <script src="js/app/controllers/ItemPedidoController.js"></script>
+    <script src="js/app/controllers/PedidoController.js"></script>
+    <script src="js/app/models/Pedido.js"></script>
+    <script src="js/app/views/PedidoView.js"></script>
  
- 
- <script>
-        let itemPedidoController = new ItemPedidoController();
+    <script>
+       let pedidoController = new PedidoController();
     </script>
+
 </body>
 </html>
