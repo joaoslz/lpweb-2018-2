@@ -12,23 +12,34 @@ class PedidoController {
 
         this._pedidoView = new PedidoView($('#js-pedidoVendaView') );
         this._pedidoView.update(this._pedido );
+        
+        this._mensagem = new Mensagem();
+        this._mensagemView = new MensagemView($('#js-mensagem-view') );
+        this._mensagemView.update(this._mensagem );
+
     }
     
     adiciona(event ) {
         
         event.preventDefault();
       
-        let item = new ItemPedido(
-            this._inputNome.value,
-            this._inputQuantidade.value,
-            this._inputValor.value  
-        );
-         // adiciona no objeto pedido ...
+        let item = _criaItemPedido();
         this._pedido.adiciona(item ); 
         this._pedidoView.update(this._pedido );
 
         this._limpaFormulario();
-        console.log(item );
+
+
+        this._mensagem.texto = `Item ${item.nome} foi adicionado com sucesso.`;
+        this._mensagemView.update(this._mensagem );
+    }
+
+    _criaItemPedido() {
+        return new ItemPedido(
+            this._inputNome.value,
+            this._inputQuantidade.value,
+            this._inputValor.value  
+        );
     }
 
     _limpaFormulario() {

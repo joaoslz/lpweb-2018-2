@@ -11,6 +11,9 @@
     
     <h1 class="text-center">Pedido de Vendas</h1>
     <div style="margin-bottom: 2rem">
+
+   
+    <div id="js-mensagem-view"></div>    
     
     <form class="form" onsubmit="pedidoController.adiciona(event )">
         
@@ -37,7 +40,8 @@
     
     </form>
    </div> 
-   <!--  <table class="table table-hover table-bordered">
+<!--  
+       <table class="table table-hover table-bordered">
         <thead>
             <tr>
                 <th>NOME</th>
@@ -51,15 +55,20 @@
         </tbody>
         
         <tfoot></tfoot>
-    </table> -->
+    </table> 
+-->
 
     <div id="js-pedidoVendaView"></div>
 
     <script src="js/app/models/ItemPedido.js"></script>
     <script src="js/app/controllers/PedidoController.js"></script>
     <script src="js/app/models/Pedido.js"></script>
+    <script src="js/app/views/View.js"></script>
     <script src="js/app/views/PedidoView.js"></script>
- 
+    <script src="js/app/models/Mensagem.js"></script>
+    <script src="js/app/views/MensagemView.js"></script>
+
+    
     <script>
        let pedidoController = new PedidoController();
     </script>

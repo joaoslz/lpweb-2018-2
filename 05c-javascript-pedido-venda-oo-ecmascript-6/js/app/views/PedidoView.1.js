@@ -1,7 +1,7 @@
-class PedidoView extends View {
+class PedidoView {
 
     constructor(elemento) {
-        super(elemento );
+        this._elemento = elemento;
     }
 
     _template(pedido ) {
@@ -40,14 +40,14 @@ class PedidoView extends View {
         </table>
         `;
     }
+
+    update(pedido ) {
+        this._elemento.innerHTML = this._template(pedido );
+    }
 }
 
 
-
-
-
-/*          
- <tfoot>
+/*           <tfoot>
               <td colspan="3"></td>
                  <td>${
                       (function calculaTotal() {
